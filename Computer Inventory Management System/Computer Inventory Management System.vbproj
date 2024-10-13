@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{899A0F17-8D1A-4C87-ACA1-C63C30FC661F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Computer_Inventory_Management_System.My.MyApplication</StartupObject>
+    <RootNamespace>Computer_Inventory_Management_System</RootNamespace>
+    <AssemblyName>Computer Inventory Management System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Computer Inventory Management System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Computer Inventory Management System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="custbill.Designer.vb">
+      <DependentUpon>custbill.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custbill.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer.Designer.vb">
+      <DependentUpon>customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="customer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custorder.Designer.vb">
+      <DependentUpon>custorder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custorder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custorderdetails.Designer.vb">
+      <DependentUpon>custorderdetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custorderdetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item.Designer.vb">
+      <DependentUpon>Item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Item.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI.Designer.vb">
+      <DependentUpon>MDI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="rptcustbill.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptcustbill.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptcustomer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptcustomer.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptcustomer1.Designer.vb">
+      <DependentUpon>rptcustomer1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptcustomer1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptcustomer2.Designer.vb">
+      <DependentUpon>rptcustomer2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptcustomer2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptitem.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptitem.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptvendor.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptvendor.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="vbill.Designer.vb">
+      <DependentUpon>vbill.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vbill.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendor.Designer.vb">
+      <DependentUpon>Vendor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vendor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vorder.Designer.vb">
+      <DependentUpon>vorder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vorder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vorderdetails.Designer.vb">
+      <DependentUpon>vorderdetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vorderdetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="custbill.resx">
+      <DependentUpon>custbill.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer.resx">
+      <DependentUpon>customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custorder.resx">
+      <DependentUpon>custorder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custorderdetails.resx">
+      <DependentUpon>custorderdetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item.resx">
+      <DependentUpon>Item.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI.resx">
+      <DependentUpon>MDI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptcustbill.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptcustbill.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptcustomer.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptcustomer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptcustomer1.resx">
+      <DependentUpon>rptcustomer1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptcustomer2.resx">
+      <DependentUpon>rptcustomer2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptitem.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptitem.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptvendor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptvendor.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vbill.resx">
+      <DependentUpon>vbill.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendor.resx">
+      <DependentUpon>Vendor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vorder.resx">
+      <DependentUpon>vorder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vorderdetails.resx">
+      <DependentUpon>vorderdetails.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Inventory.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
